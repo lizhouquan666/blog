@@ -65,6 +65,15 @@
   </url>
   
   <url>
+    <loc>https://lizhouquan666.github.io/personal/bb/index.html</loc>
+    
+    <lastmod>2023-04-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://lizhouquan666.github.io/personal/love/index.html</loc>
     
     <lastmod>2023-04-07</lastmod>
@@ -83,15 +92,6 @@
   </url>
   
   <url>
-    <loc>https://lizhouquan666.github.io/personal/bb/index.html</loc>
-    
-    <lastmod>2023-04-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://lizhouquan666.github.io/life/games/index.html</loc>
     
     <lastmod>2023-04-07</lastmod>
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://lizhouquan666.github.io/life/music/index.html</loc>
+    <loc>https://lizhouquan666.github.io/life/movies/index.html</loc>
     
     <lastmod>2023-04-07</lastmod>
     
@@ -110,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://lizhouquan666.github.io/life/movies/index.html</loc>
+    <loc>https://lizhouquan666.github.io/life/music/index.html</loc>
     
     <lastmod>2023-04-07</lastmod>
     
