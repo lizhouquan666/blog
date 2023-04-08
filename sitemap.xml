@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://lizhouquan666.github.io/posts/20230408d.html</loc>
+    <loc>https://lizhouquan666.github.io/posts/20230408dymtz.html</loc>
     
     <lastmod>2023-04-09</lastmod>
     
@@ -20,16 +20,16 @@
   </url>
   
   <url>
-    <loc>https://lizhouquan666.github.io/social/link/index.html</loc>
+    <loc>https://lizhouquan666.github.io/posts/20230408dtyan.html</loc>
     
-    <lastmod>2023-04-07</lastmod>
+    <lastmod>2023-04-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://lizhouquan666.github.io/posts/20230407d.html</loc>
+    <loc>https://lizhouquan666.github.io/social/link/index.html</loc>
     
     <lastmod>2023-04-07</lastmod>
     
@@ -74,15 +74,6 @@
   </url>
   
   <url>
-    <loc>https://lizhouquan666.github.io/personal/love/index.html</loc>
-    
-    <lastmod>2023-04-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://lizhouquan666.github.io/personal/about/index.html</loc>
     
     <lastmod>2023-04-07</lastmod>
@@ -101,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://lizhouquan666.github.io/life/games/index.html</loc>
+    <loc>https://lizhouquan666.github.io/personal/love/index.html</loc>
     
     <lastmod>2023-04-07</lastmod>
     
@@ -128,6 +119,15 @@
   </url>
   
   <url>
+    <loc>https://lizhouquan666.github.io/life/games/index.html</loc>
+    
+    <lastmod>2023-04-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://lizhouquan666.github.io/categories/index.html</loc>
     
     <lastmod>2023-04-07</lastmod>
@@ -137,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://lizhouquan666.github.io/box/gallery/index.html</loc>
+    <loc>https://lizhouquan666.github.io/box/nav/index.html</loc>
     
     <lastmod>2023-04-07</lastmod>
     
@@ -146,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://lizhouquan666.github.io/box/nav/index.html</loc>
+    <loc>https://lizhouquan666.github.io/box/gallery/index.html</loc>
     
     <lastmod>2023-04-07</lastmod>
     
@@ -221,14 +221,14 @@
   </url>
   
   <url>
-    <loc>https://lizhouquan666.github.io/categories/ThingJS%E5%BC%80%E5%8F%91/</loc>
+    <loc>https://lizhouquan666.github.io/categories/%E6%9D%A1%E7%A0%81%E8%BF%BD%E6%BA%AF%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2023-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://lizhouquan666.github.io/categories/%E6%9D%A1%E7%A0%81%E8%BF%BD%E6%BA%AF%E7%B3%BB%E7%BB%9F/</loc>
+    <loc>https://lizhouquan666.github.io/categories/%E6%A3%AE%E5%A4%A7%E5%B1%8F%E7%BB%84%E4%BB%B6/</loc>
     <lastmod>2023-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
