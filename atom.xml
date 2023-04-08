@@ -6,7 +6,7 @@
   <link href="https://lizhouquan666.github.io/atom.xml" rel="self"/>
   
   <link href="https://lizhouquan666.github.io/"/>
-  <updated>2023-04-08T10:19:03.000Z</updated>
+  <updated>2023-04-09T10:19:03.000Z</updated>
   <id>https://lizhouquan666.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>森大屏组件-页面跳转</title>
+    <link href="https://lizhouquan666.github.io/posts/20230408d.html"/>
+    <id>https://lizhouquan666.github.io/posts/20230408d.html</id>
+    <published>2023-04-09T10:19:03.000Z</published>
+    <updated>2023-04-09T10:19:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1>森大屏组件-页面跳转</h1><h1>背景介绍</h1><p>很多大屏都有不止一个主题场景，所以主题间的切换功能出场频率很高。</p><h1>解决方案</h1><blockquote><p>方案1：使用组件的交互面板。</p><p>方案2：封装了一个公共组件（页面跳转组件），通过该组件可以通过添加受控图层的方式来集中控制页面的切换。</p></blockquote><h1>适用场景</h1><p>如果主题切换按钮是大屏端提供的组件，则方案1和方案2都可以使用。</p><p>如果主题切换按钮是TX场景提供的组件，则方案1不适用，方案2可以使用。因为交互面板是大屏组件的功能，不用大屏的组件就不能使用，所以方案1不行。</p><h1>使用案例</h1><h2 id="案例1">案例1</h2><p><strong>案例内容</strong></p><p>某大屏有2个主题场景，中间有两个按钮（按钮有大屏提供），控制主题场景的切换。</p><p><img src="https://raw.githubusercontent.com/lizhouquan666/img/main/202304081925257.png" alt="img"></p><p><strong>方法1</strong></p><p>拖拽两个按钮，在按钮组件的交互面板中直接配置两个图层的显示和隐藏。分别配置两个按钮的交互面板。</p><ul><li>园区概览按钮配置的动作为：园区概览图层显示 + 人员统计图层隐藏</li><li>人员统计按钮配置的工作为：园区概览图层隐藏 + 人员统计图层显示</li></ul><p><img src="https://pan.uinosoft.cn/files/image/2022/8/a8ddc6eb1bc4e3e70a0ddaab46413dbc.gif" alt="img"></p><p><strong>方法2</strong></p><p>使用“页面跳转”组件。步骤如下所示。</p><ul><li>首先：拖拽一个“页面跳转”组件，属性面板中填写注册事件的名称，则该组件会以该名称注册并暴露一个事件</li></ul><p>备注：触发注册的事件，入参为图层名称，即可实现页面跳转</p><ul><li>第二步：添加受控图层，只需要填写图层名称即可（不想要参与切换的不用写）</li><li>第三步：从按钮中配置触发，事件入参为想要显示的图层名称</li></ul><p><img src="https://pan.uinosoft.cn/files/image/2022/8/7bc1f5a576fea32735e6a59561c6c449.gif" alt="img"></p><h2 id="案例2">案例2</h2><p><strong>案例内容</strong></p><p>某大屏有2个主题场景，不同于场景1，场景2设定，按钮组由TX场景实现，即切换主题的指令由TX场景发给2D，大屏端接收到指令后，解析指令，然后执行页面切换操作</p><blockquote><p>注意：此时使用交互面板的方式直接配就不合适了，因为交互面板是依赖某一组件的，没法直接通过代码触发。</p></blockquote><p><strong>方案</strong></p><p>可以使用“页面跳转”组件</p><p><strong>操作步骤</strong></p><p>页面跳转组件会暴露一个事件，通过触发该事件来实现页面跳转，所以，完全可以在监听TX场景的回调函数里面，直接写代码触发该事件。下面用定时器模拟TX传参，设定五秒后由园区概览切换为人员统计</p><p><img src="https://raw.githubusercontent.com/lizhouquan666/img/main/202304081925417.gif" alt="img"></p><h1>获取方式</h1><p>复制如下内容，直接在森工厂大屏里面Ctrl+V粘贴即可。</p><figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="string">&quot;type&quot;</span>:<span class="string">&quot;component&quot;</span>,<span class="string">&quot;content&quot;</span>:[&#123;<span class="string">&quot;id&quot;</span>:<span class="string">&quot;19e5db744d624d70be023fa2a58d862c&quot;</span>,<span class="string">&quot;name&quot;</span>:<span class="string">&quot;JN-COMMON-页面跳转&quot;</span>,<span class="string">&quot;config&quot;</span>:&#123;<span class="string">&quot;width&quot;</span>:<span class="number">400</span>,<span class="string">&quot;height&quot;</span>:<span class="number">250</span>,<span class="string">&quot;top&quot;</span>:<span class="number">81</span>,<span class="string">&quot;left&quot;</span>:<span class="number">755</span>,<span class="string">&quot;backgroundColor&quot;</span>:<span class="string">&quot;&quot;</span>&#125;,<span class="string">&quot;option&quot;</span>:&#123;<span class="string">&quot;options&quot;</span>:&#123;<span class="string">&quot;btnOption&quot;</span>:&#123;<span class="string">&quot;eventName&quot;</span>:<span class="string">&quot;jumpPage&quot;</span>,<span class="string">&quot;config&quot;</span>:[&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;&quot;</span>&#125;]&#125;&#125;&#125;,<span class="string">&quot;data&quot;</span>:&#123;&#125;&#125;]&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">森大屏组件-页面跳转</summary>
+    
+    
+    
+    <category term="ThingJS开发" scheme="https://lizhouquan666.github.io/categories/ThingJS%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="Markdown" scheme="https://lizhouquan666.github.io/tags/Markdown/"/>
+    
+    <category term="ThingJS" scheme="https://lizhouquan666.github.io/tags/ThingJS/"/>
+    
+  </entry>
   
   <entry>
     <title>浙江奔一条码录入主要功能</title>
