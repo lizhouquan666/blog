@@ -3176,8 +3176,8 @@ if (localStorage.getItem("blogbg") != undefined) {
   document.getElementById("defineBg").innerText = `:root{
     --default-bg: url(http://p6.qhimg.com/bdm/0_0_100/t012d996bf99340a313.jpg);
     --darkmode-bg:url(http://p2.qhimg.com/bdm/0_0_100/t017556b0aee63ecd73.jpg);
-    --mobileday-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/snow.webp);
-    --mobilenight-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/mb8.webp);
+    --mobileday-bg: url(https://pic.3gbizhi.com/uploadmark/20200913/39e45081fe23dd7e00aecc71eb573421.jpg);
+    --mobilenight-bg: url(https://pic.3gbizhi.com/uploadmark/20160530/017f7e60d6d4a2fdf6f9e3c2c2a7d3cd.jpg);
   }`;
 }
 // 切换背景主函数
